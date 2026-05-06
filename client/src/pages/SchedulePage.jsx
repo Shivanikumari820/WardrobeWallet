@@ -53,7 +53,7 @@ const SchedulePage = () => {
             return;
         }
         try {
-            const response = await fetch('https://cloth2cash.onrender.com/api/schedule', {
+            const response = await fetch('https://wardrobewallets.onrender.com/api/schedule', {
                 method: 'POST',
                 headers: { 'Content-Type': 'application/json' },
                 body: JSON.stringify(formData)

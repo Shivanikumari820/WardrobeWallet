@@ -32,7 +32,7 @@ const UserPage = () => {
     if (window.confirm(`Are you sure you want to delete user: ${user.name}?`)) {
       try {
         // Make API call to delete user - point to backend server
-        const response = await fetch(`https://cloth2cash.onrender.com/api/users/${user._id}`, {
+        const response = await fetch(`https://wardrobewallets.onrender.com/api/users/${user._id}`, {
           method: 'DELETE',
           headers: {
             'Content-Type': 'application/json',

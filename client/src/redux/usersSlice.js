@@ -5,7 +5,7 @@ export const fetchUsers = createAsyncThunk(
   'users/fetchUsers',
   async (_, { rejectWithValue }) => {
     try {
-      const response = await axios.get('https://cloth2cash.onrender.com/api/users')
+      const response = await axios.get('https://wardrobewallets.onrender.com/api/users')
       // Adjust according to your API response structure
       return response.data.users || response.data || []
     } catch (err) {

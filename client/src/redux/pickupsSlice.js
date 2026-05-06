@@ -4,7 +4,7 @@ import { createSlice, createAsyncThunk } from '@reduxjs/toolkit';
 export const fetchPickups = createAsyncThunk(
   'pickups/fetchPickups',
   async () => {
-    const response = await fetch('https://cloth2cash.onrender.com/api/schedule');
+    const response = await fetch('https://wardrobewallets.onrender.com/api/schedule');
     if (!response.ok) {
       throw new Error(`HTTP error! status: ${response.status}`);
     }
@@ -16,7 +16,7 @@ export const fetchPickups = createAsyncThunk(
 export const updatePickupStatus = createAsyncThunk(
   'pickups/updatePickupStatus',
   async ({ pickupId, status }) => {
-    const response = await fetch(`https://cloth2cash.onrender.com/api/schedule/${pickupId}/status`, {
+    const response = await fetch(`https://wardrobewallets.onrender.com/api/schedule/${pickupId}/status`, {
       method: 'PATCH',
       headers: { 'Content-Type': 'application/json' },
       body: JSON.stringify({ status }),
@@ -33,7 +33,7 @@ export const deletePickup = createAsyncThunk(
   'pickups/deletePickup',
   async (pickupId, { rejectWithValue }) => {
     try {
-      const response = await fetch(`/api/pickups/${pickupId}`, {
+      const response = await fetch(`https://wardrobewallets.onrender.com/api/pickups/${pickupId}`, {
         method: 'DELETE',
         headers: {
           'Content-Type': 'application/json',

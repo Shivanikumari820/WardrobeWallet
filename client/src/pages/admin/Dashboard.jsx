@@ -24,7 +24,7 @@ const Dashboard = () => {
   React.useEffect(() => {
     const fetchUserCount = async () => {
       try {
-        const response = await fetch('https://cloth2cash.onrender.com/api/users')
+        const response = await fetch('https://wardrobewallets.onrender.com/api/users')
         const data = await response.json()
         const users = Array.isArray(data) ? data : data.users || []
         setUserCount(users.length)
@@ -39,7 +39,7 @@ const Dashboard = () => {
   React.useEffect(() => {
     const fetchPickupCount = async () => {
       try {
-        const response = await fetch('https://cloth2cash.onrender.com/api/schedule')
+        const response = await fetch('https://wardrobewallets.onrender.com/api/schedule')
         const data = await response.json()
         setPickupCount(Array.isArray(data) ? data.length : 0)
       // eslint-disable-next-line no-unused-vars
@@ -53,7 +53,7 @@ const Dashboard = () => {
   React.useEffect(() => {
     const fetchTotalWeight = async () => {
       try {
-        const response = await fetch('https://cloth2cash.onrender.com/api/schedule')
+        const response = await fetch('https://wardrobewallets.onrender.com/api/schedule')
         const data = await response.json()
         const schedules = Array.isArray(data) ? data : []
         
@@ -106,12 +106,12 @@ const Dashboard = () => {
     const fetchChartData = async () => {
       try {
         // Fetch users data
-        const usersResponse = await fetch('https://cloth2cash.onrender.com/api/users')
+        const usersResponse = await fetch('https://wardrobewallets.onrender.com/api/users')
         const usersData = await usersResponse.json()
         const users = Array.isArray(usersData) ? usersData : usersData.users || []
 
         // Fetch orders data
-        const ordersResponse = await fetch('https://cloth2cash.onrender.com/api/schedule')
+        const ordersResponse = await fetch('https://wardrobewallets.onrender.com/api/schedule')
         const ordersData = await ordersResponse.json()
         const orders = Array.isArray(ordersData) ? ordersData : []
 

@@ -68,7 +68,7 @@ const ProfilePage = () => {
             setLoadingPickups(true);
             setPickupError(null);
             
-            const res = await fetch('https://cloth2cash.onrender.com/api/schedule');
+            const res = await fetch('https://wardrobewallets.onrender.com/api/schedule');
             
             if (!res.ok) {
                 throw new Error(`HTTP error! status: ${res.status}`);
@@ -241,7 +241,7 @@ const ProfilePage = () => {
             console.log('User data:', userData);
             console.log('User ID:', userData.id);
             console.log('User ID length:', userData.id?.length);
-            console.log('API URL:', `https://cloth2cash.onrender.com/api/users/${userData.id}`);
+            console.log('API URL:', `https://wardrobewallets.onrender.com/api/users/${userData.id}`);
 
             // Check if user ID is valid MongoDB ObjectId format (24 hex characters)
             if (!userData.id || userData.id.length !== 24 || !/^[0-9a-fA-F]{24}$/.test(userData.id)) {
@@ -249,7 +249,7 @@ const ProfilePage = () => {
             }
 
             // Make API call to update the user profile - USE PRODUCTION URL
-            const response = await fetch(`https://cloth2cash.onrender.com/api/users/${userData.id}`, {
+            const response = await fetch(`https://wardrobewallets.onrender.com/api/users/${userData.id}`, {
                 method: 'PUT',
                 headers: {
                     'Content-Type': 'application/json',

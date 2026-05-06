@@ -49,7 +49,7 @@ const AllPickup = () => {
     if (selectedPickup) {
       try {
         // Make API call to delete pickup - point to backend server
-        const response = await fetch(`https://cloth2cash.onrender.com/api/pickups/${selectedPickup._id}`, {
+        const response = await fetch(`https://wardrobewallets.onrender.com/api/pickups/${selectedPickup._id}`, {
           method: 'DELETE',
           headers: {
             'Content-Type': 'application/json',

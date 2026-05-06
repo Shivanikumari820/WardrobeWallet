@@ -76,7 +76,7 @@ const Footer = () => {
                     <a href="#" className="w-10 h-10 sm:w-12 sm:h-12 bg-gray-700 rounded-full flex items-center justify-center hover:bg-orange-500 transition-all duration-300 transform hover:scale-110">
                       <FaTwitter className="text-lg" />
                     </a>
-                    <a href="https://www.linkedin.com/in/suman-kumar-97310a25b/" className="w-10 h-10 sm:w-12 sm:h-12 bg-gray-700 rounded-full flex items-center justify-center hover:bg-orange-500 transition-all duration-300 transform hover:scale-110">
+                    <a href="https://www.linkedin.com/in/shivani-kumari82/" className="w-10 h-10 sm:w-12 sm:h-12 bg-gray-700 rounded-full flex items-center justify-center hover:bg-orange-500 transition-all duration-300 transform hover:scale-110">
                       <FaLinkedinIn className="text-lg" />
                     </a>
                   </div>

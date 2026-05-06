@@ -1,7 +1,7 @@
 import { FaWhatsapp } from 'react-icons/fa';
 
 const WhatsApp = () => {
-  const phoneNumber = '+916299974421';
+  const phoneNumber = '+918209194818';
   const message = 'Hello! I am interested in Cloth2Cash services.';
 
   const handleWhatsAppClick = () => {
