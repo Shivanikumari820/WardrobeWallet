@@ -11,7 +11,7 @@ const AdminLogin = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault()
-    if (email === 'sumanqaj9876@gmail.com' && pass === 'suman') {
+    if (email === 'shivanikumari@gmail.com' && pass === 'shivani123') {
       setError('')
       localStorage.setItem("isAdmin", "true")
       navigate('/dashboard')
@@ -83,10 +83,10 @@ const AdminLogin = () => {
             </button>
             <div className="mt-4 text-center text-gray-500 text-sm ">
               <div>
-                <span className="font-medium">Email:</span> sumanqaj9876@gmail.com
+                <span className="font-medium">Email:</span> shivanikumari@gmail.com
               </div>
               <div>
-                <span className="font-medium">Pass:</span> suman
+                <span className="font-medium">Pass:</span> shivani123
               </div>
             </div>
           </form>

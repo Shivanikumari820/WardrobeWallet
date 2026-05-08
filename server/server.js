@@ -78,7 +78,7 @@ app.use((req, res) => {
 // Global Error Handler
 app.use((err, req, res, next) => {
   console.error('Server error:', err.stack);
-
+ 
   res.status(500).json({
     success: false,
     message: 'Something went wrong!',
