@@ -53,11 +53,11 @@ const Footer = () => {
                 <div className="space-y-3 sm:space-y-4 text-base text-gray-200 mb-6 sm:mb-8">
                   <div className="flex items-center space-x-3 sm:space-x-4">
                     <FaEnvelope className="text-orange-400 flex-shrink-0 text-lg" />
-                    <span>sumanqaj9876@gmail.com</span>
+                    <span>shivanikumari@gmail.com</span>
                   </div>
                   <div className="flex items-center space-x-3 sm:space-x-4">
                     <FaPhone className="text-orange-400 flex-shrink-0 text-lg" />
-                    <span>+91 6299974421</span>
+                    <span>+91 8209194818</span>
                   </div>
                   <div className="flex items-center space-x-3 sm:space-x-4">
                     <FaMapMarkerAlt className="text-orange-400 flex-shrink-0 text-lg" />

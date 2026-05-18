@@ -135,7 +135,7 @@ const Carousel = ({ slides, autoPlay = true, autoPlayInterval = 5000, showDots =
                       size="lg"
                       className="group w-full sm:w-auto text-lg px-10 py-4 font-semibold hover:scale-105 transition-all duration-300 shadow-2xl bg-gradient-to-r from-green-500 to-green-600 hover:from-green-600 hover:to-green-700 border-0 rounded-full"
                       onClick={handleGetStarted}
-                    >
+                    > 
                       <span className="flex items-center">
                         Get Started
                         <svg className="ml-3 w-5 h-5 group-hover:translate-x-1 transition-transform duration-200" fill="none" stroke="currentColor" viewBox="0 0 24 24">

@@ -111,7 +111,7 @@ const UserPage = () => {
           className="px-4 py-2 border border-gray-300 rounded-lg text-sm outline-none min-w-[150px] bg-gray-50 focus:ring-2 focus:ring-green-200 transition"
         />
       </div>
-
+      
       {/* Table Section for desktop, Cards for mobile */}
       <div className="hidden md:block bg-white rounded-2xl shadow-lg border border-gray-200 min-h-[400px]">
         <table className="min-w-full divide-y divide-gray-200">

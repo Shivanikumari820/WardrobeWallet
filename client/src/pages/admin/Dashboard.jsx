@@ -83,7 +83,7 @@ const Dashboard = () => {
             schedule.weight ||
             schedule.clothWeight ||
             schedule.totalWeight ||
-            0
+            0 // Default to 0 if no weight found  
             
           const numericWeight = parseFloat(weight) || 0
           
@@ -119,7 +119,7 @@ const Dashboard = () => {
         const last7Days = []
         for (let i = 6; i >= 0; i--) {
           const date = new Date()
-          date.setDate(date.getDate() - i)
+          date.setDate(date.getDate() - i) 
           
           // Count all users created up to this date (cumulative)
           const usersUpToDate = users.filter(user => {

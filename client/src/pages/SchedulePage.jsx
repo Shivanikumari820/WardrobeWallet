@@ -136,7 +136,6 @@ const SchedulePage = () => {
                         <form onSubmit={handleSubmit} className="relative z-10">
                             {renderStepContent()}
 
-
                             <div className="flex flex-col sm:flex-row justify-between gap-4 mt-8 sm:mt-10">
                                 {currentStep > 1 && currentStep < 4 && (
                                     <button
