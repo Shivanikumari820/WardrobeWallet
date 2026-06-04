@@ -37,7 +37,7 @@ const ToastProvider = ({ children }) => {
         progressClassName="bg-indigo-500"
       />
     </>
-  );
+  ); 
 };
 
-export default ToastProvider;
+export default ToastProvider; 
